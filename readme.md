@@ -3,6 +3,9 @@
 
 Just a fun little side project to create a website to use as a ChatGPT client.
 
+# Demo
+
+- https://www.youtube.com/watch?v=YhBb46U0WbI
 
 
 ## Authors
