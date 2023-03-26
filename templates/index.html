@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>ChatGPT client by Mathisen</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div id="particles-js">
+
+      </div>
+        <center>
+          <h1>ChatGPT client by Mathisen</h1>
+          <div id="api-key-warning">Invalid API key!<br>Enter correct key in the openai.js file</div>
+        </center>
+
+        <div class="container">
+          <form id="openai-form">
+            <label for="input-text">Enter text to send to OpenAI API:</label>
+            <textarea id="input-text" name="input-text"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+          
+            <div id="spinner" class="spinner"></div>
+          <div id="response-area">
+            <pre><code id="response-code"></code></pre>
+          </div>
+        </div>
+        <div class="count-particles">
+      </div>
+        <!-- stats - count particles -->
+
+        <!-- <span class="js-count-particles">--</span> particles -->
+
+    </div>
+  </body>
+  <!-- app -->
+  <script src="js/particles.min.js"></script>
+  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+  <!-- stats.js lib -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
+  <script src="js/particles.js"></script>
+
+  <script src="js/openai.js"></script>
+</html>

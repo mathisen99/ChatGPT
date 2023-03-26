@@ -1,0 +1,174 @@
+body {
+  background-color: #000000;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+}
+
+h1 {
+  --s: 0.1em; /* the thickness of the line */
+  --c: #ac0ba4; /* the color */
+
+  color: #0000;
+  padding-bottom: var(--s);
+  background: linear-gradient(90deg, var(--c) 50%, #000 0)
+      calc(100% - var(--_p, 0%)) / 200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.5s;
+}
+h1:hover {
+  --_p: 100%;
+}
+
+h1 {
+  cursor: pointer;
+  color: #444444;
+  font-family: system-ui, sans-serif;
+  text-align: center;
+  font-size: 3em;
+  margin: 20px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+textarea {
+  background-image: url("code.png");
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  min-height: 150px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #444444;
+  color: #fff;
+}
+
+button {
+  background: linear-gradient(to bottom, #6930c3, #8a2be2);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#response-area {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+pre {
+  background-image: url("code.png");
+  background-color: #444444;
+  padding: 10px;
+  border-color: rgba(172, 11, 164, 0.2);
+  /* border opacity */
+  overflow-x: auto;
+  font-family: "Courier New", Courier, monospace;
+}
+
+code {
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+}
+
+#api-key-warning {
+  color: #ff0000;
+  font-size: 2em;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+} /* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -1;
+} /* ---- stats.js ---- */
+.count-particles {
+  display: none;
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+.js-count-particles {
+  font-size: 1.1em;
+}
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
+#response-area,
+textarea {
+  font-size: 14px;
+}
+#response-area {
+  font-size: 14px !important;
+}
+
+.spinner {
+  display: none;
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #690986;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
